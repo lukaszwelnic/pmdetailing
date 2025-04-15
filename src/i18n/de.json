@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "offer": "Angebot",
+    "achievements": "Erfolge",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Willkommen auf der Startseite",
+    "description": "Dies ist der Hauptbereich."
+  },
+  "offer": {
+    "title": "Unser Angebot",
+    "description": "Entdecken Sie unsere großartigen Angebote."
+  },
+  "achievements": {
+    "title": "Erfolge",
+    "description": "Wir sind stolz auf unsere Erfolge."
+  },
+  "blog": {
+    "title": "Unser Blog",
+    "description": "Lesen Sie unsere neuesten Blog-Beiträge."
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "description": "Treten Sie mit uns in Kontakt."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "offer": "Oferta",
+    "achievements": "Realizacje",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Witamy na stronie głównej",
+    "description": "To jest sekcja główna."
+  },
+  "offer": {
+    "title": "Nasza oferta",
+    "description": "Poznaj nasze niesamowite oferty."
+  },
+  "achievements": {
+    "title": "Realizacje",
+    "description": "Jesteśmy dumni z naszych osiągnięć."
+  },
+  "blog": {
+    "title": "Nasz blog",
+    "description": "Czytaj nasze najnowsze wpisy na blogu."
+  },
+  "contact": {
+    "title": "Skontaktuj się z nami",
+    "description": "Skontaktuj się z nami."
+  }
+}

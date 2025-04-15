@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "home": "Home",
+    "offer": "Offer",
+    "achievements": "Achievements",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to Home",
+    "description": "This is the home section."
+  },
+  "offer": {
+    "title": "Our Offer",
+    "description": "Explore our amazing offers."
+  },
+  "achievements": {
+    "title": "Achievements",
+    "description": "We take pride in our achievements."
+  },
+  "blog": {
+    "title": "Our Blog",
+    "description": "Read our latest blog posts."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us."
+  }
+}

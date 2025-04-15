@@ -4,8 +4,8 @@ import Offer from './pages/Offer.jsx';
 import Achievements from './pages/Achievements.jsx';
 import Blog from './pages/Blog.jsx';
 import Contact from './pages/Contact.jsx';
-import Navbar from "./assets/components/Navbar.jsx";
-import Footer from "./assets/components/Footer.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
     return (

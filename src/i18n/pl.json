@@ -25,5 +25,8 @@
   "contact": {
     "title": "Skontaktuj się z nami",
     "description": "Skontaktuj się z nami."
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone."
   }
 }

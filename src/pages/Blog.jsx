@@ -1,3 +1,7 @@
+import {useTranslation} from "react-i18next";
+
 export default function Blog() {
-    return <h1 className="text-2xl p-4">Blog</h1>;
+    const { t } = useTranslation();
+
+    return <h1 className="text-2xl p-4">{t(`blog.title`)}</h1>;
 }

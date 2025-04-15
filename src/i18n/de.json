@@ -25,5 +25,8 @@
   "contact": {
     "title": "Kontaktieren Sie uns",
     "description": "Treten Sie mit uns in Kontakt."
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
   }
 }

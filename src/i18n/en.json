@@ -25,5 +25,8 @@
   "contact": {
     "title": "Contact Us",
     "description": "Get in touch with us."
+  },
+  "footer": {
+    "rights": "All rights reserved."
   }
 }

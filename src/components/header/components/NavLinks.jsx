@@ -1,4 +1,3 @@
-// components/NavLinks.jsx
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -14,17 +13,12 @@ export default function NavLinks({ onClick }) {
     const { t } = useTranslation();
 
     return (
-        <>
+        <nav className="nav">
             {links.map(({ path, key }) => (
-                <Link
-                    key={path}
-                    to={path}
-                    onClick={onClick}
-                    className="hover:underline transition-all"
-                >
+                <Link key={path} to={path} onClick={onClick} className="nav-link">
                     {t(`nav.${key}`)}
                 </Link>
             ))}
-        </>
+        </nav>
     );
 }

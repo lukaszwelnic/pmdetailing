@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import plFlag from '../assets/flags/pl.svg';
-import enFlag from '../assets/flags/us.svg';
-import deFlag from '../assets/flags/de.svg';
+
+import plFlag from '../../../assets/flags/pl.svg';
+import enFlag from '../../../assets/flags/us.svg';
+import deFlag from '../../../assets/flags/de.svg';
 
 const languages = [
     { code: 'pl', flag: plFlag, alt: 'PL', label: 'Polski' },
@@ -14,21 +15,19 @@ export default function LanguageSwitcher() {
     const currentLanguage = i18n.language;
 
     return (
-        <div className="flex gap-2">
+        <div className="flags-container">
             {languages.map(({ code, flag, alt, label }) => (
                 <button
                     key={code}
                     onClick={() => i18n.changeLanguage(code)}
                     title={label}
-                    className={`w-8 h-6 overflow-hidden rounded-md border-2 transition-all duration-300
-          transform hover:scale-110 focus:outline-none
-          ${currentLanguage === code ? 'border-blue-500' : 'border-transparent'}`}
+                    className={`flag-button ${currentLanguage === code ? 'border-blue-500' : 'border-transparent'}`}
                 >
                     <img
                         src={flag}
                         alt={alt}
-                        className="w-full h-full object-cover"
-                        style={{ opacity: currentLanguage === code ? 1 : 0.6 }}
+                        className="language-img"
+                        style={{ opacity: currentLanguage === code ? 1 : 0.75 }}
                     />
                 </button>
             ))}

@@ -1,2 +1,0 @@
-- Move navigation to Navbar
-- Write Navbar and footer components

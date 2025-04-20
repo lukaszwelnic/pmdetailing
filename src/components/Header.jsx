@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom';
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -10,10 +11,12 @@ import logo from '../assets/logo.png';
 import {Link} from "react-router-dom";
 
 export default function Header() {
+    const location = useLocation();
+    const isHome = location.pathname === '/';
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
-        <header className="bg-neutral-800 text-white">
-            <nav className="mx-auto flex max-w-8xl items-center justify-between p-3 lg:px-4">
+        <header className={`text-white fixed w-full z-50 ${isHome ? 'bg-neutral-800/85 backdrop-blur-xs' : 'bg-neutral-800'}`}>
+            <nav className="mx-auto flex max-w-8xl items-center justify-between p-4">
                 <div className="flex lg:flex-1">
                     <Link to="/" className="-ml-1 p-0.5">
                         <img

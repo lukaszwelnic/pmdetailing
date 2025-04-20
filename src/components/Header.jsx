@@ -3,6 +3,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 import NavLinks from './NavLinks.jsx';
+import Socials from './Socials.jsx';
 import Flags from './Flags.jsx';
 
 import logo from '../assets/logo.png';
@@ -14,26 +15,31 @@ export default function Header() {
         <header className="bg-neutral-800 text-white">
             <nav className="mx-auto flex max-w-8xl items-center justify-between p-3 lg:px-4">
                 <div className="flex lg:flex-1">
-                    <Link to="/" className="-m-1.5 p-1.5">
+                    <Link to="/" className="-ml-1 p-0.5">
                         <img
                             src={logo}
                             alt="Logo"
-                            className="h-10 w-auto p-1.5"
+                            className="h-8 w-auto mt-1.5 p-1"
                         />
                     </Link>
                 </div>
                 <NavLinks/>
-                <div className="flex items-center gap-4 lg:flex-1 lg:justify-end">
-                    <Flags />
-                    <div className="flex lg:hidden">
-                        <button
-                            type="button"
-                            onClick={() => setMobileMenuOpen(true)}
-                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 transition hover:scale-110 focus:outline-none"
-                        >
-                            <Bars3Icon className={`size-6 text-white transition-transform duration-300 ${mobileMenuOpen ? 'scale-0' : 'scale-100'}`} />
-                        </button>
+                <div className="hidden lg:flex lg:flex-1 items-center">
+                    <div className="flex flex-1 justify-center">
+                        <Socials />
                     </div>
+                    <div className="ml-auto">
+                        <Flags />
+                    </div>
+                </div>
+                <div className="flex lg:hidden">
+                    <button
+                        type="button"
+                        onClick={() => setMobileMenuOpen(true)}
+                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2 transition scale-110 focus:outline-none"
+                    >
+                        <Bars3Icon className={`size-6 text-white transition-transform duration-300 ${mobileMenuOpen ? 'scale-0' : 'scale-100'}`} />
+                    </button>
                 </div>
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">

@@ -33,12 +33,12 @@ export default function NavLinks({ onClick, variant = 'desktop' }) {
                     </div>
 
                     <div className="py-6">
-                        <h3 className="mb-2 text-sm font-semibold text-white">Follow us</h3>
+                        <h3 className="mb-2 text-sm font-semibold text-white">{t(`nav.socials`)}</h3>
                         <Socials />
                     </div>
 
                     <div className="py-6">
-                        <h3 className="mb-4 text-sm font-semibold text-white">Language</h3>
+                        <h3 className="mb-4 text-sm font-semibold text-white">{t(`nav.language`)}</h3>
                         <Flags variant="mobile" />
                     </div>
                 </div>

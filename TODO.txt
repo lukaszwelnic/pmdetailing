@@ -5,5 +5,3 @@
 - should I set max height of header and footer?
 - How should I place the social icons and language button
 - should Contact button in hamburger menu be gold colour
-- polepszyć wyświetlanie flag jedna obok drugiej w widoku mobilnym
-- wycentrować linki mobilne

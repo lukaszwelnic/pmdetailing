@@ -17,7 +17,7 @@ export default function Flags({ variant = 'desktop' }) {
 
     if (variant === 'mobile') {
         return (
-            <div className="flex gap-3">
+            <div className="flex gap-3 py-2">
                 {languages.map(({ code, flag, alt, label }) => (
                     <button
                         key={code}
@@ -49,7 +49,7 @@ export default function Flags({ variant = 'desktop' }) {
             <MenuItems transition className="absolute right-0 z-10 mt-2 w-30 origin-top-right rounded-md bg-neutral-800 py-1
                                              shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95
                                              data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out
-                                             data-leave:duration-75 data-leave:ease-in">
+                                             data-leave:duration-100 data-leave:ease-in">
                 {otherLanguages.map(({ code, flag, label, alt }) => (
                     <MenuItem key={code}>
                         <button

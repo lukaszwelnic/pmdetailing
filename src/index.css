@@ -4,3 +4,7 @@
     --color-gold: #9e7213;
     --color-gold-light: #c58e18;
 }
+
+*::-webkit-scrollbar {
+    display: none;
+}

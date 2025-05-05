@@ -1,7 +1,6 @@
 - add owners photo to contact form or somewhere else?
 - add 404 Page - https://tailwindcss.com/plus/ui-blocks/marketing/feedback/404-pages
 - add aria-labels for CEO
-- put hamburger manu and X icon in one dif and add smooth transition?
-- should I set max height of header and footer?
-- How should I place the social icons and language button
 - should Contact button in hamburger menu be gold colour
+- set blur and opacity for header while scrolling
+- should I stick to pt-18?

@@ -2,6 +2,7 @@ import FeatureCard from "../components/FeatureCard";
 import { FaThumbsUp, FaShieldAlt, FaHandsHelping } from "react-icons/fa";
 
 import home_page_img from "../assets/images/home_page_image.png";
+import {IoIosArrowDown} from "react-icons/io";
 
 export default function Home() {
     return (
@@ -21,8 +22,8 @@ export default function Home() {
             </section>
 
             {/* Features Section */}
-            <section className="bg-neutral-800 text-white px-4 py-16">
-                <div className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <section className="bg-neutral-800 text-white py-20 px-10">
+                <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-16">
                     <FeatureCard
                         title="ZADOWOLENIE"
                         icon={<FaThumbsUp />}
@@ -38,6 +39,9 @@ export default function Home() {
                         icon={<FaHandsHelping />}
                         description="Wychodząc z pomocną ręką oferujemy usługi z dojazdem do klienta"
                     />
+                </div>
+                <div className="flex py-10 justify-center text-3xl">
+                    <IoIosArrowDown />
                 </div>
             </section>
         </>

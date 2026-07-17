@@ -1,0 +1,1 @@
+import{u as e,j as n}from"./index-DcAW2ur4.js";function a(){const{t}=e();return n.jsx("h1",{className:"text-2xl text-center font-semibold text-black pt-24 p-4",children:t("contact.title")})}export{a as default};

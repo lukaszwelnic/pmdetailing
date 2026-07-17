@@ -1,1 +1,0 @@
-import{u as e,j as s}from"./index-C2kyj6uR.js";function a(){const{t}=e();return s.jsx("h1",{className:"text-2xl text-center font-semibold text-black pt-24 p-4",children:t("achievements.title")})}export{a as default};

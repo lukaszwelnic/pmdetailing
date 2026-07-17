@@ -5,8 +5,8 @@ import AppRoutes from './routes/Routes.jsx';
 export default function App() {
     return (
         <div className="flex flex-col min-h-screen bg-white overflow-x-hidden">
-        <Header />
-            <main className="flex-grow pt-18">
+            <Header />
+            <main className="flex-grow">
                 <AppRoutes />
             </main>
             <Footer />

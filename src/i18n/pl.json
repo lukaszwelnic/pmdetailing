@@ -10,7 +10,25 @@
   },
   "home": {
     "title": "Witamy na stronie głównej",
-    "description": "To jest sekcja główna."
+    "description": "To jest sekcja główna.",
+    "hero": {
+      "subtitle": "Profesjonalne usługi detailingu samochodowego",
+      "cta": "Skontaktuj się"
+    },
+    "features": {
+      "satisfaction": {
+        "title": "ZADOWOLENIE",
+        "description": "Wierzymy, że fundamentem naszej firmy jest zadowolenie klienta"
+      },
+      "safety": {
+        "title": "BEZPIECZEŃSTWO",
+        "description": "Dzięki wieloletniemu doświadczeniu, na każdą usługę dajemy gwarancję satysfakcji"
+      },
+      "comfort": {
+        "title": "KOMFORT",
+        "description": "Wychodząc z pomocną ręką oferujemy usługi z dojazdem do klienta"
+      }
+    }
   },
   "offer": {
     "title": "Nasza oferta",
@@ -30,5 +48,10 @@
   },
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone."
+  },
+  "notFound": {
+    "title": "Strona nie istnieje",
+    "message": "Strona, której szukasz, nie została znaleziona.",
+    "back": "Wróć na stronę główną"
   }
 }

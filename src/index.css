@@ -5,6 +5,11 @@
     --color-gold-light: #c58e18;
 }
 
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 *::-webkit-scrollbar {
     display: none;
 }

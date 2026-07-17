@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -6,13 +6,25 @@ import NavLinks from './NavLinks.jsx';
 import Socials from './Socials.jsx';
 import Flags from './Flags.jsx';
 
-import logo from '../assets/logo.png';
-import {Link} from "react-router-dom";
+import logo from '../assets/logo.webp';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const { pathname } = useLocation();
+    const isHome = pathname === '/';
+
+    useEffect(() => {
+        const handleScroll = () => setScrolled(window.scrollY > 50);
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <header className="fixed text-white w-full z-50 bg-neutral-800">
+        <header className={`fixed text-white w-full z-50 transition-all duration-300 ${
+            isHome && !scrolled ? 'bg-neutral-800/30 backdrop-blur-md' : 'bg-neutral-800 shadow-lg'
+        }`}>
             <nav className="mx-auto flex max-w-8xl items-center justify-between p-4">
                 <div className="flex lg:flex-1">
                     <Link to="/" className="-ml-1 p-0.5">
@@ -23,7 +35,7 @@ export default function Header() {
                         />
                     </Link>
                 </div>
-                <NavLinks/>
+                <NavLinks />
                 <div className="hidden lg:flex lg:flex-1 items-center">
                     <div className="flex flex-1 justify-center">
                         <Socials />
@@ -36,9 +48,9 @@ export default function Header() {
                     <button
                         type="button"
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                        aria-label="Open navigation menu"
                         className="inline-flex items-center justify-center rounded-md p-3"
                     >
-                        {/* Hamburger Icon */}
                         <Bars3Icon
                             className={`size-6 text-white absolute transition-transform duration-200 ease-in-out ${mobileMenuOpen ? 'scale-0 opacity-0' : 'scale-100 opacity-100'}`}
                         />
@@ -51,9 +63,9 @@ export default function Header() {
                         <button
                             type="button"
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            aria-label="Close navigation menu"
                             className="inline-flex items-center justify-center rounded-md p-3"
                         >
-                            {/* X Icon */}
                             <XMarkIcon
                                 className={`size-6 text-white absolute transition-transform duration-200 ease-in-out ${mobileMenuOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}
                             />
@@ -63,5 +75,5 @@ export default function Header() {
                 </DialogPanel>
             </Dialog>
         </header>
-);
+    );
 }

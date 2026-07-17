@@ -10,7 +10,25 @@
   },
   "home": {
     "title": "Welcome to Home",
-    "description": "This is the home section."
+    "description": "This is the home section.",
+    "hero": {
+      "subtitle": "Professional automotive detailing services",
+      "cta": "Contact Us"
+    },
+    "features": {
+      "satisfaction": {
+        "title": "SATISFACTION",
+        "description": "We believe client satisfaction is the foundation of our business"
+      },
+      "safety": {
+        "title": "SAFETY",
+        "description": "With years of experience, we back every service with a satisfaction guarantee"
+      },
+      "comfort": {
+        "title": "COMFORT",
+        "description": "Going the extra mile, we offer mobile services with visits to your location"
+      }
+    }
   },
   "offer": {
     "title": "Our Offer",
@@ -30,5 +48,10 @@
   },
   "footer": {
     "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "The page you are looking for doesn't exist.",
+    "back": "Back to Home"
   }
 }

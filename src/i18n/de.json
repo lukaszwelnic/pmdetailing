@@ -10,7 +10,25 @@
   },
   "home": {
     "title": "Willkommen auf der Startseite",
-    "description": "Dies ist der Hauptbereich."
+    "description": "Dies ist der Hauptbereich.",
+    "hero": {
+      "subtitle": "Professionelle Fahrzeugaufbereitung",
+      "cta": "Kontakt aufnehmen"
+    },
+    "features": {
+      "satisfaction": {
+        "title": "ZUFRIEDENHEIT",
+        "description": "Wir glauben, dass Kundenzufriedenheit das Fundament unseres Unternehmens ist"
+      },
+      "safety": {
+        "title": "SICHERHEIT",
+        "description": "Mit jahrelanger Erfahrung geben wir auf jeden Service eine Zufriedenheitsgarantie"
+      },
+      "comfort": {
+        "title": "KOMFORT",
+        "description": "Mit einem helfenden Ansatz bieten wir mobile Dienste mit Hausbesuchen an"
+      }
+    }
   },
   "offer": {
     "title": "Unser Angebot",
@@ -30,5 +48,10 @@
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten."
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "message": "Die gesuchte Seite existiert nicht.",
+    "back": "Zurück zur Startseite"
   }
 }

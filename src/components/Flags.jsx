@@ -34,8 +34,8 @@ export default function Flags({ variant = 'desktop' }) {
         );
     }
 
-    const current = languages.find(l => l.code === currentLanguage);
-    const otherLanguages = languages.filter(lang => lang.code !== currentLanguage);
+    const current = languages.find(l => currentLanguage.startsWith(l.code)) ?? languages[0];
+    const otherLanguages = languages.filter(lang => lang.code !== current.code);
 
     return (
         <Menu as="div" className="relative">

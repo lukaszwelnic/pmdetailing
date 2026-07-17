@@ -11,6 +11,9 @@
   "home": {
     "title": "Willkommen auf der Startseite",
     "description": "Dies ist der Hauptbereich.",
+    "gallery": {
+      "title": "GALERIE"
+    },
     "hero": {
       "subtitle": "Professionelle Fahrzeugaufbereitung",
       "cta": "Kontakt aufnehmen"

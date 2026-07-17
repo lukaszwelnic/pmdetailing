@@ -11,6 +11,9 @@
   "home": {
     "title": "Welcome to Home",
     "description": "This is the home section.",
+    "gallery": {
+      "title": "GALLERY"
+    },
     "hero": {
       "subtitle": "Professional automotive detailing services",
       "cta": "Contact Us"

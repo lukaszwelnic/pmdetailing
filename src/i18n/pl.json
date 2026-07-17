@@ -11,6 +11,9 @@
   "home": {
     "title": "Witamy na stronie głównej",
     "description": "To jest sekcja główna.",
+    "gallery": {
+      "title": "GALERIA"
+    },
     "hero": {
       "subtitle": "Profesjonalne usługi detailingu samochodowego",
       "cta": "Skontaktuj się"

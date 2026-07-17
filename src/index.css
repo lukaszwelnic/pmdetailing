@@ -2,7 +2,8 @@
 
 @theme {
     --color-gold: #9e7213;
-    --color-gold-light: #c58e18;
+    --color-gold-light: #b28b45;
+    --color-dark-section: #2c2f31;
 }
 
 * {
